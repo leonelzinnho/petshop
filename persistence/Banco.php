@@ -25,6 +25,16 @@
 				return false;
 			}
 		}
+
+		public function consultar($sql)
+		{
+			$consulta=$this->conexao->query($sql);
+			if($consulta->num_rows>0){
+				return $consulta;
+			}else{
+				return false;
+			}
+		}
 	
 	}
 
