@@ -26,11 +26,25 @@ class UsuarioPA{
 
 	public function logar($usuario,$senha);
 	{
-		
+		$sql="select nome,senha from usuario";
+		$consulta=$this->banco->consultar($sql);
+		if(!$consulta){
+			return false;
+		}else{
+			while ($linha=$consulta->fetch_assoc()) {
+				if($usuario==$linha['nome']){
+					if($senha==$linha['senha']){
+						return true;
+					}else{
+						return false;
+					}
+				}else{
+					return false;
+				}
+			}
+		}
+
 	}
-
-
-
 }
 
 ?>
