@@ -24,7 +24,7 @@ class UsuarioPA{
 		}
 	}
 
-	public function logar($usuario,$senha);
+	public function logar($usuario,$senha)
 	{
 		$sql="select nome,senha from usuario";
 		$consulta=$this->banco->consultar($sql);
