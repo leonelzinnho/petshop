@@ -3,8 +3,8 @@ SISTEMA PETSHOP
 
 =>Sistema de exemplo PHP +MySQL
 =>Turma 2023_85
-
-  	/\      /\
+  
+      	/\      /\
        /  \____/  \
       |            |
       |  ^      ^  |
