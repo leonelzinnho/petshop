@@ -45,6 +45,20 @@ class UsuarioPA{
 		}
 
 	}
+
+	public function retornaTipo($usuario)
+	{
+		$sql="select tipo from usuario where nome='$usuario'";
+		$consulta=$this->banco->consultar($sql);
+		if(!$consulta){
+			return false;
+		}else{
+			while($linha=$consulta->fetch_assoc()){
+				$tipo=$linha['tipo'];
+			}
+			return $tipo;
+		}
+	}
 }
 
 ?>

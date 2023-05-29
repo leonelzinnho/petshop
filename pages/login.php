@@ -9,6 +9,23 @@ require_once 'cabecalho.php';
 	<p><input type="password" name="senha" size="10" maxlength="10" pattern="[a-zA-Z0-9_]{1,10}" required></p>
 	<p><input type="submit" name="botao" value="Logar">	
 </form>
-
+<?php
+	if(isset($_POST['botao'])){
+		require_once './model/Usuario.php';
+		require_once './persistence/UsuarioPA.php';
+		$usuario=new Usuario();
+		$usuarioPA=new UsuarioPA();
+		$usuario->setNome($_POST['nome']);
+		$usuario->setSenha($_POST['senha']);
+		$resp=$usuarioPA->logar($usuario->getNome(),$usuario->getSenha());
+		if ($resp) {
+			$usuario->logar($usuario);
+			echo "<h2>Login com sucesso!</h2>";
+			echo "<a href='/'>Entrar</a>";
+		}else{
+			echo "<h2>Login ou senha incorretos!</h2>";
+		}
+	}
+?>
 </body>
 </html>
