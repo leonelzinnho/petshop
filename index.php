@@ -5,7 +5,7 @@ $request=substr($request,8);
 
 if(!isset($_COOKIE['usuario'])){
 	echo "<h2>Você não está logado!</h2>";
-	echo "<a href='/login'>Logar</a>";
+	echo "<a href='/petshop/login'>Logar</a>";
 }
 
 if($request=='/login'){
