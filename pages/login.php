@@ -1,7 +1,7 @@
 <?php
 require_once 'cabecalho.php';
 ?>
-<form action="/login" method="POST" class="login">
+<form action="/petshop/login" method="POST" class="login">
 	<h1>Login</h1>
 	<p>Digite o nome de usuário:</p>
 	<p><input type="text" name="nome" size="30" maxlength="30" pattern="[a-zA-Z_\s0-9]{1,30}" required></p>
@@ -16,12 +16,12 @@ require_once 'cabecalho.php';
 		$usuario=new Usuario();
 		$usuarioPA=new UsuarioPA();
 		$usuario->setNome($_POST['nome']);
-		$usuario->setSenha($_POST['senha']);
+		$usuario->setSenha(md5($_POST['senha']));
 		$resp=$usuarioPA->logar($usuario->getNome(),$usuario->getSenha());
 		if ($resp) {
 			$usuario->logar($usuario);
 			echo "<h2>Login com sucesso!</h2>";
-			echo "<a href='/'>Entrar</a>";
+			echo "<a href='/petshop/'>Entrar</a>";
 		}else{
 			echo "<h2>Login ou senha incorretos!</h2>";
 		}

@@ -8,7 +8,7 @@ if (!$tipo) {
 	echo "<h2>Tente logar novamente!</h2>";
 	echo "<a href='/login'>Login</a>";
 }else{
-	if ($tipo==1) {
+	if ($tipo==1) {//admin
 ?>
 	<div id="topo">
 		<div id="logo">
@@ -26,16 +26,102 @@ if (!$tipo) {
 				</li>
 				<li>Listar
 					<ol>
-						<li><a href="">
-
-
-
-
+						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/listar/servico" target="janela">Serviço</a></li>
+						<li><a href="/usuario" target="janela">Usuário</a></li>
+					</ol>
+				</li>
+				<li>Buscar
+					<ol>
+						<li><a href="/buscar" target="janela">Dados</a></li>
+					</ol>
+				</li>
+				<li>Sair
+					<ol>
+						<li><a href="/logoff" target="janela">Logoff</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="principal">
+		<iframe name="janela" id="janela"></iframe>
+	</div>
 <?php
+	}else if($tipo==2){//funcionário
+?>
+<div id="topo">
+		<div id="logo">
+			<img src="../img/logo.jpg">
+		</div>
+		<div id="menu">
+			<ul class="nav">
+				<li>Cadastrar
+					<ol>
+						<li><a href="/cadastrar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/cadastrar/pet" target="janela">Pet</a></li>
+						<li><a href="/cadastrar/servico" target="janela">Serviço</a></li>
+					</ol>
+				</li>
+				<li>Listar
+					<ol>
+						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/listar/servico" target="janela">Serviço</a></li>
+					</ol>
+				</li>
+				<li>Buscar
+					<ol>
+						<li><a href="/buscar" target="janela">Dados</a></li>
+					</ol>
+				</li>
+				<li>Sair
+					<ol>
+						<li><a href="/logoff" target="janela">Logoff</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="principal">
+		<iframe name="janela" id="janela"></iframe>
+	</div>
+<?php
+	}else{//cliente
+?>
+<div id="topo">
+		<div id="logo">
+			<img src="../img/logo.jpg">
+		</div>
+		<div id="menu">
+			<ul class="nav">
+				<li>Listar
+					<ol>
+						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/listar/servico" target="janela">Serviço</a></li>
+					</ol>
+				</li>
+				<li>Buscar
+					<ol>
+						<li><a href="/buscar" target="janela">Dados</a></li>
+					</ol>
+				</li>
+				<li>Sair
+					<ol>
+						<li><a href="/logoff" target="janela">Logoff</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="principal">
+		<iframe name="janela" id="janela"></iframe>
+	</div>
+<?php 
 	}
-
 }
-
 ?>
 </body>
 </html>
