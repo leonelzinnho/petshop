@@ -12,7 +12,7 @@ if (!$tipo) {
 ?>
 	<div id="topo">
 		<div id="logo">
-			<img src="../img/logo.jpg">
+			<img src="/petshop/img/pets.png">
 		</div>
 		<div id="menu">
 			<ul class="nav">
@@ -53,7 +53,7 @@ if (!$tipo) {
 ?>
 <div id="topo">
 		<div id="logo">
-			<img src="../img/logo.jpg">
+			<img src="/petshop/img/pets.png">
 		</div>
 		<div id="menu">
 			<ul class="nav">
@@ -92,7 +92,7 @@ if (!$tipo) {
 ?>
 <div id="topo">
 		<div id="logo">
-			<img src="../img/logo.jpg">
+			<img src="/petshop/img/pets.png">
 		</div>
 		<div id="menu">
 			<ul class="nav">
