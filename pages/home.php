@@ -18,28 +18,28 @@ if (!$tipo) {
 			<ul class="nav">
 				<li>Cadastrar
 					<ol>
-						<li><a href="/cadastrar/cliente" target="janela">Cliente</a></li>
-						<li><a href="/cadastrar/pet" target="janela">Pet</a></li>
-						<li><a href="/usuario/cadastrar" target="janela">Usuário</a></li>
-						<li><a href="/cadastrar/servico" target="janela">Serviço</a></li>
+						<li><a href="/petshop/cadastrar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/petshop/cadastrar/pet" target="janela">Pet</a></li>
+						<li><a href="/petshop/usuario/cadastrar" target="janela">Usuário</a></li>
+						<li><a href="/petshop/cadastrar/servico" target="janela">Serviço</a></li>
 					</ol>
 				</li>
 				<li>Listar
 					<ol>
-						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
-						<li><a href="/listar/pet" target="janela">Pet</a></li>
-						<li><a href="/listar/servico" target="janela">Serviço</a></li>
-						<li><a href="/usuario" target="janela">Usuário</a></li>
+						<li><a href="/petshop/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/petshop/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/petshop/listar/servico" target="janela">Serviço</a></li>
+						<li><a href="/petshop/usuario" target="janela">Usuário</a></li>
 					</ol>
 				</li>
 				<li>Buscar
 					<ol>
-						<li><a href="/buscar" target="janela">Dados</a></li>
+						<li><a href="/petshop/buscar" target="janela">Dados</a></li>
 					</ol>
 				</li>
 				<li>Sair
 					<ol>
-						<li><a href="/logoff" target="janela">Logoff</a></li>
+						<li><a href="/petshop/logoff" target="janela">Logoff</a></li>
 					</ol>
 				</li>
 			</ul>
@@ -59,26 +59,26 @@ if (!$tipo) {
 			<ul class="nav">
 				<li>Cadastrar
 					<ol>
-						<li><a href="/cadastrar/cliente" target="janela">Cliente</a></li>
-						<li><a href="/cadastrar/pet" target="janela">Pet</a></li>
-						<li><a href="/cadastrar/servico" target="janela">Serviço</a></li>
+						<li><a href="/petshop/cadastrar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/petshop/cadastrar/pet" target="janela">Pet</a></li>
+						<li><a href="/petshop/cadastrar/servico" target="janela">Serviço</a></li>
 					</ol>
 				</li>
 				<li>Listar
 					<ol>
-						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
-						<li><a href="/listar/pet" target="janela">Pet</a></li>
-						<li><a href="/listar/servico" target="janela">Serviço</a></li>
+						<li><a href="/petshop/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/petshop/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/petshop/listar/servico" target="janela">Serviço</a></li>
 					</ol>
 				</li>
 				<li>Buscar
 					<ol>
-						<li><a href="/buscar" target="janela">Dados</a></li>
+						<li><a href="/petshop/buscar" target="janela">Dados</a></li>
 					</ol>
 				</li>
 				<li>Sair
 					<ol>
-						<li><a href="/logoff" target="janela">Logoff</a></li>
+						<li><a href="/petshop/logoff" target="janela">Logoff</a></li>
 					</ol>
 				</li>
 			</ul>
@@ -98,19 +98,19 @@ if (!$tipo) {
 			<ul class="nav">
 				<li>Listar
 					<ol>
-						<li><a href="/listar/cliente" target="janela">Cliente</a></li>
-						<li><a href="/listar/pet" target="janela">Pet</a></li>
-						<li><a href="/listar/servico" target="janela">Serviço</a></li>
+						<li><a href="/petshop/listar/cliente" target="janela">Cliente</a></li>
+						<li><a href="/petshop/listar/pet" target="janela">Pet</a></li>
+						<li><a href="/petshop/listar/servico" target="janela">Serviço</a></li>
 					</ol>
 				</li>
 				<li>Buscar
 					<ol>
-						<li><a href="/buscar" target="janela">Dados</a></li>
+						<li><a href="/petshop/buscar" target="janela">Dados</a></li>
 					</ol>
 				</li>
 				<li>Sair
 					<ol>
-						<li><a href="/logoff" target="janela">Logoff</a></li>
+						<li><a href="/petshop/logoff" target="janela">Logoff</a></li>
 					</ol>
 				</li>
 			</ul>
