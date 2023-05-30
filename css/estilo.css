@@ -59,3 +59,38 @@ ul.nav li:hover ol{
 ul.nav li ol li:hover{
 	background-color:#D98292;
 }
+table th{
+background:linear-gradient(to left,#F2762E,#F28627,#F29B30);
+	border:1px solid #A68160;
+	color:#A68160;
+}
+table td{
+	border:1px solid black;
+}
+table{
+	max-width: 70vw;
+	margin-left: 15vw;
+	height: auto;
+}
+#principal{
+	width: 100vw;
+	height: 80vh;
+}
+#janela{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+form{
+background:linear-gradient(to left,#F2762E,#F28627,#F29B30);
+	width: 60vw;
+	min-height: 10vh;
+	margin-left: 20vw;
+	margin-top: 5vw;
+	border-radius: 10px;
+	color:#A68160;
+	text-align: center;
+}
+form h1{
+	font-size: 1.3rem;
+}
