@@ -76,9 +76,32 @@ class Cliente{
 		return $this->bairro;
 	}
 
-	
+	public function setCidade($cidade)
+	{
+		$this->cidade=$cidade;
+	}
 
+	public function getCidade(){
+		return $this->cidade;
+	}
 
+	public function setEstado($estado)
+	{
+		$this->estado=$estado;
+	}
+
+	public function getEstado(){
+		return $this->estado;
+	}
+
+	public function setEmail($email)
+	{
+		$this->email=$email;
+	}
+
+	public function getEmail(){
+		return $this->email;
+	}
 
 }
 
