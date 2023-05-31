@@ -14,5 +14,35 @@ require_once 'cabecalho.php';
 	<p>Email:<input type="email" name="email" required></p>
 	<p><input type="submit" name="botao" value="Cadastrar"></p>
 </form>
+<?php
+	if(isset($_POST['botao'])){
+		require_once './model/Cliente.php';
+		require_once './persistence/ClientePA.php';
+		$cliente=new Cliente();
+		$clientePA=new ClientePA();
 
-
+		$cliente->setCpf($_POST['cpf']);
+		$cliente->setNome($_POST['nome']);
+		$cliente->setNascimento($_POST['nascimento']);
+		$cliente->setTelefone($_POST['telefone']);
+		$cliente->setRua($_POST['rua']);
+		$cliente->setBairro($_POST['bairro']);
+		$cliente->setCidade($_POST['cidade']); 
+		$cliente->setEstado($_POST['estado']);
+		$cliente->setEmail($_POST['email']);
+		$id=$clientePA->retornaId();
+		if (!$id) {
+			$id=0;
+		}
+		$id++;
+		$cliente->setId($id);
+		$resp=$clientePA->cadastrar($cliente);
+		if(!$resp){
+			echo "<h2>Erro na tentativa de inserir!</h2>";
+		}else{
+			echo "<h2>Cliente cadastrado com sucesso!</h2>";
+		}
+	}
+?>
+</body>
+</html>

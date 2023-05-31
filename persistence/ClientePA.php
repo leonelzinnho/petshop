@@ -14,16 +14,16 @@ class ClientePA{
 	public function cadastrar($cliente)
 	{
 		$sql="insert into cliente values(".
-		$cliente.getId().",'".
-		$cliente.getCpf()."','".
-		$cliente.getNome()."','".
-		$cliente.getNascimento()."','".
-		$cliente.getTelefone()."','".
-		$cliente.getRua()."','".
-		$cliente.getBairro()."','".
-		$cliente.getCidade()."','".
-		$cliente.getEstado()."','".
-		$cliente.getEmail()."')";
+		$cliente->getId().",'".
+		$cliente->getCpf()."','".
+		$cliente->getNome()."','".
+		$cliente->getNascimento()."','".
+		$cliente->getTelefone()."','".
+		$cliente->getRua()."','".
+		$cliente->getBairro()."','".
+		$cliente->getCidade()."','".
+		$cliente->getEstado()."','".
+		$cliente->getEmail()."')";
 		$resp=$this->banco->executar($sql);
 		if(!$resp){
 			return false;
