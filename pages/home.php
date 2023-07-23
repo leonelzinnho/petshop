@@ -1,7 +1,7 @@
 <?php
 require_once 'cabecalho.php';
 
-require_once './persistence/UsuarioPA.php';
+require_once '../persistence/UsuarioPA.php';
 $usuarioPA=new UsuarioPA();
 $tipo=$usuarioPA->retornaTipo($_COOKIE['usuario']);
 if (!$tipo) {
